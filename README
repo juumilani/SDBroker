@@ -1,0 +1,19 @@
+Gabrieli Santos 726523 
+Julia Milani 726552
+
+
+TO RUN THE PROJECT:
+
+1) Run the codes
+cd SDBroker
+python3 -m venv venv
+source venv/bin/activate
+sudo yay -S pyzmq               (or just use whatever downloader you have installed to download the pyzmq package)
+
+2) In different terminals run, in this order:
+python env.py
+python sensor_thread.py
+python manager.py
+
+3) And then, in another terminal, pass the room you want to monitor as a parameter. The rooms go up to 8 with the pattern "RN1", "RN2", etc.
+python client.py username [id_room]
